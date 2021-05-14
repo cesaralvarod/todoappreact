@@ -1,0 +1,52 @@
+form {
+  width: 100%;
+  min-width: 100%;
+  margin-top: 2rem;
+}
+
+form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 10rem;
+  max-height: 10rem;
+  resize: none;
+  overflow-x: none;
+  border: none;
+  background: none;
+  border: 2px solid #ccc;
+  color: #000;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem;
+  outline: none;
+}
+
+form textarea:focus {
+  outline: none;
+}
+
+form textarea:focus-within {
+  border: 2px solid #deab12;
+}
+
+form .container-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+form button {
+  border: none;
+  background: none;
+  background: #45b818;
+  border-radius: 0.2rem;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #54d124;
+}

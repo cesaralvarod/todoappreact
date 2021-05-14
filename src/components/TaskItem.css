@@ -1,0 +1,81 @@
+li.task-item {
+  display: flex;
+  align-items: flex-start;
+  user-select: none;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+li.task-item:last-child {
+  margin-bottom: 0;
+}
+
+label.task-content {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+span.task-checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  background: transparent;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+span.task-checkbox::before {
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-out;
+}
+
+input[type="checkbox"]:checked + label.task-content > span.task-checkbox {
+  content: "✓";
+  border: 1px solid #08c42a;
+  background: #08c42a;
+}
+
+input[type="checkbox"]:checked
+  + label.task-content
+  > span.task-checkbox::before {
+  content: "✓";
+}
+
+label.task-content p {
+  padding: 0 2.5rem;
+}
+
+input[type="checkbox"]:checked + label.task-content > p {
+  text-decoration: line-through;
+}
+
+button.task-times {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  padding: 0;
+  color: #c23a3a;
+  cursor: pointer;
+  position: absolute;
+  top: -11px;
+  right: 10px;
+  transition: all 0.3s ease-out;
+}
+
+button.task-times:hover {
+  color: #fa1111;
+}

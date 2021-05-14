@@ -1,0 +1,11 @@
+footer {
+  background: #eee;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+footer a,
+footer a:visited {
+  text-decoration: none;
+  color: #d4983f;
+}

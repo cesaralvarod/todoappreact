@@ -1,0 +1,9 @@
+.tasks-content {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .tasks-content {
+    width: 60%;
+  }
+}

@@ -1,0 +1,14 @@
+.tasks-category {
+  margin-bottom: 3rem;
+}
+
+.tasks-category h3 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2rem;
+}
+
+.tasks-category p.total-p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  text-align: right;
+}

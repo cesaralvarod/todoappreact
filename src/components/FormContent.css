@@ -1,0 +1,9 @@
+.form-content {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .form-content {
+    width: 40%;
+  }
+}
