@@ -8,11 +8,24 @@ import TaskItem from "./TaskItem";
 
 import "./TasksList.css";
 
-const TasksList = ({ tasks }) => {
-  const tasksList = tasks;
+const TasksList = ({ tasks, setArrData }) => {
+  const handleToggle = (id) => {
+    setArrData({ type: "change", id: id });
+  };
 
-  const tasksRender = tasksList.map((task) => {
-    return <TaskItem key={task.id} dataTask={task} />;
+  const handleDelete = (id) => {
+    setArrData({ type: "delete", id: id });
+  };
+
+  const tasksRender = tasks.map((task) => {
+    return (
+      <TaskItem
+        key={task.id}
+        dataTask={task}
+        handleToggle={handleToggle}
+        handleDelete={handleDelete}
+      />
+    );
   });
 
   return <ul className="tasks-list">{tasksRender}</ul>;

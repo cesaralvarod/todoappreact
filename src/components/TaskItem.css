@@ -12,6 +12,7 @@ li.task-item:last-child {
 
 label.task-content {
   position: relative;
+  cursor: pointer;
 }
 
 input[type="checkbox"] {

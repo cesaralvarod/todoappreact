@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 // Component
 
@@ -8,13 +8,13 @@ import TaskForm from "./forms/TaskForm";
 
 import "./FormContent.css";
 
-const FormContent = ({ setArrData }) => {
+const FormContent = memo(({ setArrData }) => {
   return (
     <div className="form-content">
       <h2>Add Task</h2>
       <TaskForm setArrData={setArrData} />
     </div>
   );
-};
+});
 
 export default FormContent;

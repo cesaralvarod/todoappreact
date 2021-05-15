@@ -1,36 +1,36 @@
-import React, { useReducer } from "react";
+import React, { useEffect, useReducer } from "react";
 
 // Components
 
 import TasksContent from "./TasksContent";
 import FormContent from "./FormContent";
 
+// Reducers
+
+import arrDataReducer from "./helpers/arrDataReducer";
+
 // Styles
 
 import "./Content.css";
 
 const Content = () => {
-  console.log("cargado");
-
-  let initialArrData = { data: [], total: 0 };
-
-  const arrDataReducer = (state, action) => {
-    switch (action.type) {
-      case "add":
-        return {
-          data: [...state.data, action.dataForm],
-          total: state.total + 1,
-        };
-      default:
-        throw new Error("Input requires an action type");
-    }
+  const init = () => {
+    return (
+      JSON.parse(localStorage.getItem("tasks")) || {
+        data: [],
+      }
+    );
   };
 
-  const [arrData, setArrData] = useReducer(arrDataReducer, initialArrData);
+  const [arrData, setArrData] = useReducer(arrDataReducer, {}, init);
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(arrData));
+  }, [arrData]);
 
   return (
     <div className="content">
-      <TasksContent arrData={arrData} />
+      <TasksContent arrData={arrData} setArrData={setArrData} />
       <FormContent setArrData={setArrData} />
     </div>
   );

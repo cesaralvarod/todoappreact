@@ -4,13 +4,9 @@ form {
   margin-top: 2rem;
 }
 
-form textarea {
+form input[type="text"] {
   min-width: 100%;
   max-width: 100%;
-  min-height: 10rem;
-  max-height: 10rem;
-  resize: none;
-  overflow-x: none;
   border: none;
   background: none;
   border: 2px solid #ccc;
@@ -21,11 +17,11 @@ form textarea {
   outline: none;
 }
 
-form textarea:focus {
+form input[type="text"]:focus {
   outline: none;
 }
 
-form textarea:focus-within {
+form input[type="text"]:focus-within {
   border: 2px solid #deab12;
 }
 

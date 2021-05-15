@@ -1,36 +1,35 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 // Styles
 
 import "./TaskForm.css";
 
 const TaskForm = ({ setArrData }) => {
-  let content = "";
-  let data = {};
+  const refInput = useRef(null);
+
+  useEffect(() => {
+    refInput.current.focus();
+  }, []);
+
+  const sendData = (data) => [
+    setArrData({
+      type: "add",
+      dataForm: data,
+    }),
+  ];
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const content = refInput.current.value;
     if (content !== "") {
-      data = {
-        id: Date.now(),
-        content: content,
-        isComplete: false,
-      };
-      setArrData({ type: "add", dataForm: data });
+      sendData({ id: Date.now(), content: content, done: false });
       e.target.reset();
     }
   };
 
-  const handleInputTextarea = (e) => {
-    content = e.target.value;
-  };
-
   return (
     <form onSubmit={handleSubmit}>
-      <textarea
-        placeholder="Add a task"
-        onInput={handleInputTextarea}
-      ></textarea>
+      <input ref={refInput} type="text" />
       <div className="container-buttons">
         <button>Add</button>
       </div>
