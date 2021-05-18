@@ -8,11 +8,11 @@ import TaskForm from "./forms/TaskForm";
 
 import "./FormContent.css";
 
-const FormContent = memo(({ setArrData }) => {
+const FormContent = memo(() => {
   return (
     <div className="form-content">
       <h2>Add Task</h2>
-      <TaskForm setArrData={setArrData} />
+      <TaskForm />
     </div>
   );
 });

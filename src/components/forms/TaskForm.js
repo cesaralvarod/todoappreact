@@ -1,10 +1,13 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useContext } from "react";
+import TaskContext from "../../helpers/TaskContext";
 
 // Styles
 
 import "./TaskForm.css";
 
-const TaskForm = ({ setArrData }) => {
+const TaskForm = () => {
+  const { setArrData } = useContext(TaskContext);
+
   const refInput = useRef(null);
 
   useEffect(() => {

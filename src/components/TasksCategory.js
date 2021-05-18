@@ -9,11 +9,11 @@ import TasksList from "./TasksList";
 
 import "./TasksCategory.css";
 
-const TasksCategory = ({ title, tasks, setArrData }) => {
+const TasksCategory = ({ title, tasks }) => {
   return (
     <div className="tasks-category">
       {title && <h3>{title}</h3>}
-      <TasksList tasks={tasks} setArrData={setArrData} />
+      <TasksList tasks={tasks} />
       <p className="total-p">Total: {tasks.length}</p>
     </div>
   );

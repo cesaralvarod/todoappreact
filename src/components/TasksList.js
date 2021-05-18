@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 
 // Components
 
 import TaskItem from "./TaskItem";
 
+// Context
+
+import TaskContext from "../helpers/TaskContext";
+
 // Styles
 
 import "./TasksList.css";
 
-const TasksList = ({ tasks, setArrData }) => {
+const TasksList = ({ tasks }) => {
+  const { setArrData } = useContext(TaskContext);
+
   const handleToggle = (id) => {
     setArrData({ type: "change", id: id });
   };

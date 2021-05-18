@@ -7,7 +7,11 @@ import FormContent from "./FormContent";
 
 // Reducers
 
-import arrDataReducer from "./helpers/arrDataReducer";
+import arrDataReducer from "../helpers/arrDataReducer";
+
+// Context
+
+import TaskContext from "../helpers/TaskContext";
 
 // Styles
 
@@ -30,8 +34,10 @@ const Content = () => {
 
   return (
     <div className="content">
-      <TasksContent arrData={arrData} setArrData={setArrData} />
-      <FormContent setArrData={setArrData} />
+      <TaskContext.Provider value={{ arrData, setArrData }}>
+        <TasksContent />
+        <FormContent />
+      </TaskContext.Provider>
     </div>
   );
 };
