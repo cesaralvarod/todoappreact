@@ -1,52 +1,72 @@
 # To Do App
 
-To Do App done with React, allows you to add, complete or delete them.
-We use hooks for the best performance's app.
+This is a task application where you can add, mark as completed or delete them, this works with localStorage.
 
-![Reference image](./preview.png)
+You can see the project working on it by [clicking here](https://todoapp-cesaralvarod.netlify.app/)
 
-## How install?
+![Reference Image](./preview.png "Reference Image")
 
-For you can install To Do App, in the project directory you must have yarn or npm installed for to use the following commands:
+## Content
+
+- [Clone](#clone)
+- [Starting](#starting)
+- [Testing](#testing)
+- [Deploy](#deploy)
+- [Technologies](#technologies)
+- [Copyright](#copyright)
+
+## Clone
+
+To install the project you have to clone the repository:
+
+```
+git clone https://github.com/cesaralvarod/todoappreact
+```
+
+Now go to the project folder
+
+```
+cd todoappreact/
+```
+
+## Starting
+
+### Pre-requeriments
+
+- NodeJS
+
+  You must have NodeJS installed to be able to run npm commands
+
+### Installation
+
+To install the dependencies of **To Do App** you need to run:
 
 ```
 npm install
 ```
 
-or
+Runs the app in the development mode. Open _localhost:3000_ to view it in your favorite browser.
 
-```
-yarn start
-```
+## Testing
 
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in the browser.
-
-```
-yarn test
-```
-
-or
+To test the project run the following command. This launches the test runner in the interactive watch mode:
 
 ```
 npm test
 ```
 
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
+## Deploy
 
-```
-yarn build
-```
-
-or
+To deploy the project run the following command:
 
 ```
 npm build
 ```
 
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies
 
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
+- [React](https://reactjs.org/) - The most popular javascript's framework
+
+## Copyright
+
+&copy; **To Do App** - [cesaralvarod](https://github.com/cesaralvarod) 2021
