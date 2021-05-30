@@ -6,7 +6,7 @@ You can see the project working on it by [clicking here](https://todoapp-cesaral
 
 ![Reference Image](./preview.png "Reference Image")
 
-## Content
+# Content
 
 - [Clone](#clone)
 - [Starting](#starting)
@@ -15,7 +15,7 @@ You can see the project working on it by [clicking here](https://todoapp-cesaral
 - [Technologies](#technologies)
 - [Copyright](#copyright)
 
-## Clone
+# Clone
 
 To install the project you have to clone the repository:
 
@@ -29,15 +29,15 @@ Now go to the project folder
 cd todoappreact/
 ```
 
-## Starting
+# Starting
 
-### Pre-requeriments
+## Pre-requeriments
 
 - NodeJS
 
   You must have NodeJS installed to be able to run npm commands
 
-### Installation
+## Installation
 
 To install the dependencies of **To Do App** you need to run:
 
@@ -47,7 +47,7 @@ npm install
 
 Runs the app in the development mode. Open _localhost:3000_ to view it in your favorite browser.
 
-## Testing
+# Testing
 
 To test the project run the following command. This launches the test runner in the interactive watch mode:
 
@@ -55,7 +55,7 @@ To test the project run the following command. This launches the test runner in 
 npm test
 ```
 
-## Deploy
+# Deploy
 
 To deploy the project run the following command:
 
@@ -63,10 +63,10 @@ To deploy the project run the following command:
 npm build
 ```
 
-## Technologies
+# Technologies
 
 - [React](https://reactjs.org/) - The most popular javascript's framework
 
-## Copyright
+# Copyright
 
 &copy; **To Do App** - [cesaralvarod](https://github.com/cesaralvarod) 2021
