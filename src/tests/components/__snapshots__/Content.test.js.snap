@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in component Content Component Content should show correctly 1`] = `
+<div
+  className="content"
+>
+  <ContextProvider
+    value={
+      Object {
+        "arrData": Object {
+          "data": Array [],
+        },
+        "setArrData": [Function],
+      }
+    }
+  >
+    <TasksContent />
+    <Memo() />
+  </ContextProvider>
+</div>
+`;

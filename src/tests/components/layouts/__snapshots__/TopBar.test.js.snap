@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in component layout TopBar Component layout TopBar should show correctly 1`] = `
+<header
+  className="container-topbar"
+>
+  <h1>
+    TodoApp
+  </h1>
+</header>
+`;

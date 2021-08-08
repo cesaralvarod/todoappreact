@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in component layout Footer Component layout Footer should show correctly 1`] = `
+<footer>
+  <p>
+    © 
+    <a
+      href="https://github.com/cesaralvarod"
+    >
+      cesaralvarod
+    </a>
+     2021
+  </p>
+</footer>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in component App Component App should show correctly 1`] = `
+<Fragment>
+  <TopBar />
+  <div
+    className="container"
+  >
+    <Content />
+  </div>
+  <Footer />
+</Fragment>
+`;
