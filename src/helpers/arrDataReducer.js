@@ -13,7 +13,6 @@ const arrDataReducer = (state, action) => {
       state.data = state.data.map((task) =>
         task.id === action.id ? { ...task, done: !task.done } : task
       );
-      console.log(state.data);
       return {
         data: state.data,
       };

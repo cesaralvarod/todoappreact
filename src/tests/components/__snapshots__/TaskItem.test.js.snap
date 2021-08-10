@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in component TaskItem Component TaskItem should show correctly 1`] = `
+<li
+  className="task-item"
+>
+  <input
+    defaultChecked={false}
+    id={123}
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="task-content"
+    htmlFor={123}
+  >
+    <span
+      className="task-checkbox"
+    />
+    <p>
+      lorem ipsum
+    </p>
+  </label>
+  <button
+    className="task-times"
+    onClick={[Function]}
+  >
+    ×
+  </button>
+</li>
+`;

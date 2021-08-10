@@ -7,5 +7,11 @@ describe("Testing in component App", () => {
     const wrapper = shallow(<App />);
 
     expect(wrapper).toMatchSnapshot();
+
+    expect(wrapper.find("TopBar").exists()).toBeTruthy();
+
+    expect(wrapper.find("Content").exists()).toBeTruthy();
+
+    expect(wrapper.find("Footer").exists()).toBeTruthy();
   });
 });
