@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in component TasksCategory Component TaskCategory should show correctly 1`] = `
+<div
+  className="tasks-category"
+>
+  <h3>
+    Category ...
+  </h3>
+  <TasksList
+    tasks={
+      Array [
+        Object {
+          "content": "Learn react",
+          "done": false,
+          "id": 0,
+        },
+        Object {
+          "content": "Do homework",
+          "done": true,
+          "id": 1,
+        },
+        Object {
+          "content": "Watch tv",
+          "done": false,
+          "id": 2,
+        },
+      ]
+    }
+  />
+  <p
+    className="total-p"
+  >
+    Total: 
+    3
+  </p>
+</div>
+`;

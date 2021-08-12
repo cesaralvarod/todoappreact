@@ -5,20 +5,20 @@ exports[`Testing in component TaskItem Component TaskItem should show correctly 
   className="task-item"
 >
   <input
-    defaultChecked={false}
-    id={123}
+    defaultChecked={true}
+    id={1}
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="task-content"
-    htmlFor={123}
+    htmlFor={1}
   >
     <span
       className="task-checkbox"
     />
     <p>
-      lorem ipsum
+      Do homework
     </p>
   </label>
   <button

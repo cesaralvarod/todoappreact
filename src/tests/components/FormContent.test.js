@@ -7,5 +7,7 @@ describe("Testing in component FormContent", () => {
     const wrapper = shallow(<FormContent />);
 
     expect(wrapper).toMatchSnapshot();
+
+    expect(wrapper.find("TaskForm").exists()).toBeTruthy();
   });
 });

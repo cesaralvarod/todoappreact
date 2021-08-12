@@ -19,7 +19,7 @@ const TasksCategory = ({ title, tasks }) => {
   );
 };
 
-TasksList.propTypes = {
+TasksCategory.propTypes = {
   title: PropTypes.string,
   tasks: PropTypes.array,
 };

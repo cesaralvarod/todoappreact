@@ -8,31 +8,34 @@ import "./TaskForm.css";
 const TaskForm = () => {
   const { setArrData } = useContext(TaskContext);
 
-  const refInput = useRef(null);
+  const inputRef = useRef(null);
 
   useEffect(() => {
-    refInput.current.focus();
+    inputRef.current.focus();
   }, []);
 
-  const sendData = (data) => [
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const { value } = inputRef.current;
+
+    console.log(value);
+
+    if (value === "") {
+      return;
+    }
+
     setArrData({
       type: "add",
-      dataForm: data,
-    }),
-  ];
+      dataForm: { id: Date.now(), content: value.trim(), done: false },
+    });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const content = refInput.current.value;
-    if (content !== "") {
-      sendData({ id: Date.now(), content: content, done: false });
-      e.target.reset();
-    }
+    event.target.reset();
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input ref={refInput} type="text" />
+      <input ref={inputRef} type="text" />
       <div className="container-buttons">
         <button>Add</button>
       </div>

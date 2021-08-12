@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in component TasksContent Component TasksContent should render correctly 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "arrData": Object {
+        "data": Array [
+          Object {
+            "content": "Learn react",
+            "done": false,
+            "id": 0,
+          },
+          Object {
+            "content": "Do homework",
+            "done": true,
+            "id": 1,
+          },
+          Object {
+            "content": "Watch tv",
+            "done": false,
+            "id": 2,
+          },
+        ],
+      },
+    }
+  }
+>
+  <TasksContent />
+</ContextProvider>
+`;

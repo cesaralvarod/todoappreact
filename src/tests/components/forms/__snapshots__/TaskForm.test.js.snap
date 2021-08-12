@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in component form TaskForm Component form TaskForm should render correctly 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    type="text"
+  />
+  <div
+    className="container-buttons"
+  >
+    <button>
+      Add
+    </button>
+  </div>
+</form>
+`;

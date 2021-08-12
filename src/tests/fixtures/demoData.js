@@ -1,7 +1,7 @@
 export const demoData = {
   data: [
-    { id: 0, desc: "Learn react", done: false },
-    { id: 1, desc: "Do homework", done: true },
-    { id: 2, desc: "Watch tv", donde: false },
+    { id: 0, content: "Learn react", done: false },
+    { id: 1, content: "Do homework", done: true },
+    { id: 2, content: "Watch tv", done: false },
   ],
 };
